@@ -8,8 +8,8 @@ module SmtRails
       app.config.assets.configure do |env|
         if env.respond_to?(:register_transformer)
           env.register_mime_type 'text/html', extensions: ['.mustache'], charset: :html
-          env.register_preprocessor 'text/html', Tilt
-        else
+          env.register_preprocessor 'text/html', Tilt, silence_deprecation: true
+        elsif env.respond_to?(:register_engine)
           env.register_engine(".#{SmtRails.template_extension}", Tilt)
         end
       end
