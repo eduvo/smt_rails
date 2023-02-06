@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
 
   gem.add_runtime_dependency "rails",           "~> 6.0"
   gem.add_runtime_dependency "mustache",        "~> 1.1"
-  gem.add_runtime_dependency "sprockets",       "~> 2.4"
+  gem.add_runtime_dependency "sprockets",       "~> 4.2"
   gem.add_runtime_dependency "tilt",            "~> 2.0"
 
   gem.files         = `git ls-files`.split($\)
