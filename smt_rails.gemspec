@@ -11,10 +11,10 @@ Gem::Specification.new do |gem|
   gem.extra_rdoc_files  = [ "LICENSE", "README.md" ]
   gem.rdoc_options      = ["--charset=UTF-8"]
 
-  gem.add_runtime_dependency "rails",           "~> 6.0"
-  gem.add_runtime_dependency "mustache",        "~> 1.1"
-  gem.add_runtime_dependency "sprockets",       "~> 4.2"
-  gem.add_runtime_dependency "tilt",            "~> 2.0"
+  gem.add_runtime_dependency "rails"
+  gem.add_runtime_dependency "mustache"
+  gem.add_runtime_dependency "sprockets"
+  gem.add_runtime_dependency "tilt"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
