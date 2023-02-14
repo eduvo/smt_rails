@@ -14,7 +14,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "rails"
   gem.add_runtime_dependency "mustache"
   gem.add_runtime_dependency "sprockets"
-  gem.add_runtime_dependency "tilt"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

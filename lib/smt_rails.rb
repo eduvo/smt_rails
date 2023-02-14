@@ -4,13 +4,13 @@ require "smt_rails/config"
 module SmtRails
   extend Config
 
-  autoload(:Tilt, 'smt_rails/tilt')
+  autoload(:Processor, 'smt_rails/processor')
 
   if defined?(Rails)
     require 'smt_rails/engine'
   else
     require 'sprockets'
-    Sprockets.register_engine ".#{SmtRails.template_extension}", Tilt
+    Sprockets.register_engine ".#{SmtRails.template_extension}", Processor
   end
 end
 
